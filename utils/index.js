@@ -1,3 +1,6 @@
+const inquirer = require('inquirer');
+
+
 function promptUser() {
     return inquirer.prompt([
         {
@@ -17,18 +20,7 @@ function promptUser() {
     };
 
 
-const getEmployee = async () => {
-    const url = '/api/employee';
 
-    try {
-        const res = await fetch(url, {
-            method: 'GET',
-            headers: {
-                'Content-Type'
-            }
-        })
-    }
-}
 
 
 
