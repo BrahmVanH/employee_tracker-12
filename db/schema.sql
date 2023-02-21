@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS employees_db;
+CREATE DATABASE employees_db;
+
+USE employees_db;
+
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCRIMENT,
     department_name VARCHAR(30) NOT NULL
@@ -15,7 +20,7 @@ CREATE TABLE role (
     ON DELETE SET NULL
 )
 
-CREATE TABLE employees (
+CREATE TABLE employee (
     id INT NOT NULL AUTO_INCRIMENT,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,

@@ -1,5 +1,13 @@
 INSERT INTO role (id, title, department, salary)
-VALUES (1, )
+VALUES (1, "General Manager", "Management", 343200),    
+       (2, "Sales Manager", "Management", 86573), 
+       (3, "Building Manager", "Management", 85367), 
+       (4, "Grounds Manager", "Groundskeeping", 40805), 
+       (5, "Lead Engineer", "Engineering", 88307),  
+       (6, "Software Engineer", "Engineering", 74344),
+       (7, "Graphic Designer", "Design", 102800),
+       (8, "Salesperson", "Sales", 65465),
+       (9, "Accountant", "Accounting", 55469),
 
 INSERT INTO department (id, department_name)
 VALUES (3, "Sales"),
@@ -11,29 +19,21 @@ VALUES (3, "Sales"),
        (7, "Design");
 
 INSERT INTO employees (first_name, last_name, title, department, salary, manager)
-VALUES ("Tim", "Johnson", "Grounds Manager", "Groundskeeping", "40805", "Han"),
-       ("Han", "Mosquite", "Building Manager", "Property Management", "85367", "Thor"),
-       ("Arturo", "Moreno", "Lead Engineer", "Engineering", "88307", "Lucas"),
-       ("Jared", "Furomsubweh", "Software Engineer", "74344", "Engineering", "Arturo"),
-       ("Janine", "Harrisburg", "Software Engineer", "76450" "Engineering", "Arturo"),
-       ("Clementine", "McLovin", "Graphic Designer", "102,800", "Design", null),
-       ("Moraine", "Van Heusen", "Salesperson", "37351" "Sales", "Joe"),
-       ("Orlando", "Blemheuber", "Salesperson", "65465", "Sales", "Lucas"),
-       ("Thor", "Odinson", "General Manager", "343200", "Management", null),
-       ("Joe", "Ocumalvelea", "Sales Manager", "86573", "Management", "Thor"),
-       ("Jackson", "Heffenstemph", "Accountant", "55469", "Accounting", "Lucas");
+VALUES ("Tim", "Johnson", "Grounds Manager", "Groundskeeping", 40805, "Han"),
+       ("Han", "Mosquite", "Building Manager", "Management", 85367, "Thor"),
+       ("Arturo", "Moreno", "Lead Engineer", "Engineering", 88307, "Lucas"),
+       ("Jared", "Furomsubweh", "Software Engineer", "Engineering", 74344, "Arturo"),
+       ("Janine", "Harrisburg", "Software Engineer", "Engineering", 74344, "Arturo"),
+       ("Clementine", "McLovin", "Graphic Designer", "Design", 102800, null),
+       ("Moraine", "Van Heusen", "Salesperson", "Sales", 65465, "Joe"),
+       ("Orlando", "Blemheuber", "Salesperson", "Sales", 65465, "Lucas"),
+       ("Thor", "Odinson", "General Manager", "Management", 343200, null),
+       ("Joe", "Ocumalvelea", "Sales Manager", "Management", 86573, "Thor"),
+       ("Jackson", "Heffenstemph", "Accountant", "Accounting", 55469, "Lucas");
 
 
 
 
 
 
-       1, General Manager,  
-       2, Sales Manager, 
-       3, Building Manager, 
-       4, Grounds Manager, 
-       5, Lead Engineer, 
-       6, Software Engineer, 
-       7, Graphic Designer, 
-       8, Salesperson, 
-       9, Accountant, 
+       

@@ -16,3 +16,12 @@ schema:
     formatted table containing columns for derparment names and department ids
     formatted table showing employee data*
 
+Questions:
+view all employees 
+add employee
+view all roles 
+add role
+view all departments
+add department
+
+
