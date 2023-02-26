@@ -1,6 +1,13 @@
 **PEEP NEW SCREENSHOT (51) FOR RECOMMENDATION ON HOW TO PROCEED WITH TABLE JOINING 
 **INTRODUCE SEQUELIZE TO INTERFACE WITH DB
 
+Quick Flow:
+
+Create database
+Seed database
+Prompt user for questions
+
+
 Need function to present formatted table showing department names
     function to print the job title, role id, the department that that role belongs to, and the salary for that role
     function to present formatted table showing employee data*

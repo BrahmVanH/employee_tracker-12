@@ -18,7 +18,7 @@ VALUES (3, "Sales"),
        (1, "Engineering"),
        (7, "Design");
 
-INSERT INTO employees (first_name, last_name, title, department, salary, manager)
+INSERT INTO employees (first_name, last_name, title, manager)
 VALUES ("Tim", "Johnson", "Grounds Manager", "Groundskeeping", 40805, "Han"),
        ("Han", "Mosquite", "Building Manager", "Management", 85367, "Thor"),
        ("Arturo", "Moreno", "Lead Engineer", "Engineering", 88307, "Lucas"),

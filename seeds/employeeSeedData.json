@@ -1,0 +1,68 @@
+[
+    {
+        "first_name": "Tim",
+        "last_name": "Johnson",
+        "title": "Grounds Manager",
+        "manager": "Han"
+    },
+    {
+        "first_name": "Han",
+        "last_name": "Mosquite",
+        "title": "Building Manager",
+        "manager": "Thor"
+    },
+    {
+        "first_name": "Arturo",
+        "last_name": "Moreno",
+        "title": "Lead Engineer",
+        "manager": "Thor"
+    },
+    {
+        "first_name": "Jared",
+        "last_name": "Furomsubweh",
+        "title": "Software Engineer",
+        "manager": "Arturo"
+    },
+    {
+        "first_name": "Janine",
+        "last_name": "Harrisburg",
+        "title": "Software Engineer",
+        "manager": "Arturo"
+    },
+    {
+        "first_name": "Clementine",
+        "last_name": "McLovin",
+        "title": "Graphic Designer",
+        "manager": ""
+    },
+    {
+        "first_name": "Moraine",
+        "last_name": "Van Heusen",
+        "title": "Salesperson",
+        "manager": "Joe"
+    },
+    {
+        "first_name": "Orlando",
+        "last_name": "Blemheuber",
+        "title": "Salesperson",
+        "manager": "Lucas"
+    },
+    {
+        "first_name": "Thor",
+        "last_name": "Odinson",
+        "title": "General Manager",
+        "manager": "null"
+    },
+    {
+        "first_name": "Joe",
+        "last_name": "Ocumalvelea",
+        "title": "Sales Manager",
+        "manager": "Thor"
+    },
+    {
+        "first_name": "JAckson",
+        "last_name": "Heffenstemph",
+        "title": "Accountant",
+        "manager": "Lucas"
+    }
+]
