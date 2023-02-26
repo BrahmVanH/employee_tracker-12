@@ -3,13 +3,9 @@ const express = require('express');
 const mysql = require('mysql2');
 // Import and require sequelize 
 const sequelize = require('./config/connection');
-const routes = require('./routes');
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// turn on routes
-app.use(routes);
 
 // Express middleware
 app.use(express.urlencoded({ extended: false }));

@@ -1,4 +1,32 @@
 const inquirer = require('inquirer');
+// get the client
+const mysql = require('mysql2');
+
+// create the connection
+const connection = mysql.createConnection(
+  {
+    host:'localhost', 
+    user: 'root', 
+    database: 'employee_db'
+  }
+);
+// Use **this (promise().)** variation of query to expose promise.. whatever that means
+/* con.promise().query("SELECT 1")
+  .then( ([rows,fields]) => {
+    console.log(rows);
+  })
+  .catch(console.log)
+  .then( () => con.end());
+
+  THIS IS A SAMPLE CODE FROM THE INTERWEBS */
+
+const db = mysql.createConnection(
+    {
+        user: 'root',
+        password: 'Odinson!042920',
+        database: 'employees_db'
+    },
+)
 
 
 function promptUser() {
@@ -72,5 +100,5 @@ const addAnEmployee = () => {
 }
 
 const updateEmployeeRole = () => {
-    
+
 }
