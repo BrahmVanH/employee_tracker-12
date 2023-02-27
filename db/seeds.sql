@@ -1,65 +1,40 @@
-INSERT INTO role (id, title, department, salary)
-VALUES (1, "General Manager", "Management", 343200),    
-       (2, "Sales Manager", "Management", 86573), 
-       (3, "Building Manager", "Management", 85367), 
-       (4, "Grounds Manager", "Groundskeeping", 40805), 
-       (5, "Lead Engineer", "Engineering", 88307),  
-       (6, "Software Engineer", "Engineering", 74344),
-       (7, "Graphic Designer", "Design", 102800),
-       (8, "Salesperson", "Sales", 65465),
-       (9, "Accountant", "Accounting", 55469),
+INSERT INTO roles (id, title, salary)
+VALUES (001, "General Manager", 343200),    
+       (002, "Sales Manager", 86573), 
+       (003, "Building Manager", 85367), 
+       (004, "Grounds Manager", 40805), 
+       (005, "Lead Engineer", 88307),  
+       (006, "Software Engineer", 74344),
+       (007, "Graphic Designer", 102800),
+       (008, "Salesperson", 65465),
+       (009, "Accountant", 55469);
 
-INSERT INTO department (id, department_name)
-VALUES (3, "Sales"),
-       (4, "Groundskeeping"),
-       (2, "Accounting"),
-       (8, "Management"),
-       (5, "Propery Management"),
-       (1, "Engineering"),
-       (7, "Design");
+INSERT INTO departments (id, department_name)
+VALUES  (001, "Engineering"),
+        (002, "Accounting"),
+        (003, "Sales"),
+        (004, "Groundskeeping"),
+        (005, "Propery Management"),
+        (006, "Design"),
+        (007, "Management");
+        
 
-INSERT INTO employees (first_name, last_name, title, manager)
-VALUES ("Tim", "Johnson", "Grounds Manager", "Groundskeeping", 40805, "Han"),
-       ("Han", "Mosquite", "Building Manager", "Management", 85367, "Thor"),
-       ("Arturo", "Moreno", "Lead Engineer", "Engineering", 88307, "Lucas"),
-       ("Jared", "Furomsubweh", "Software Engineer", "Engineering", 74344, "Arturo"),
-       ("Janine", "Harrisburg", "Software Engineer", "Engineering", 74344, "Arturo"),
-       ("Clementine", "McLovin", "Graphic Designer", "Design", 102800, null),
-       ("Moraine", "Van Heusen", "Salesperson", "Sales", 65465, "Joe"),
-       ("Orlando", "Blemheuber", "Salesperson", "Sales", 65465, "Lucas"),
-       ("Thor", "Odinson", "General Manager", "Management", 343200, null),
-       ("Joe", "Ocumalvelea", "Sales Manager", "Management", 86573, "Thor"),
-       ("Jackson", "Heffenstemph", "Accountant", "Accounting", 55469, "Lucas");
+INSERT INTO employees (id, first_name, last_name, role_id, manager_)
+VALUES (001, "Tim", "Johnson", "Grounds Manager", 40805, "Han"),
+       (002, "Han", "Mosquite", "Building Manager", 85367, "Thor"),
+       (003, "Arturo", "Moreno", "Lead Engineer", 88307, "Lucas"),
+       (004, "Jared", "Furomsubweh", "Software Engineer", 74344, "Arturo"),
+       (005, "Janine", "Harrisburg", "Software Engineer", 74344, "Arturo"),
+       (006, "Clementine", "McLovin", "Graphic Designer", 102800, null),
+       (007 "Moraine", "Van Heusen", "Salesperson", 65465, "Joe"),
+       (008, "Orlando", "Blemheuber", "Salesperson", 65465, "Lucas"),
+       (009, "Thor", "Odinson", "General Manager", 343200, null),
+       (010, "Joe", "Ocumalvelea", "Sales Manager", 86573, "Thor"),
+       (011, "Jackson", "Heffenstemph", "Accountant", 55469, "Lucas");
 
 
 
 
-CREATE TABLE department (
-    id INT NOT NULL AUTO_INCRIMENT,
-    department_name VARCHAR(30) NOT NULL
-    PRIMARY KEY (id)
-)
 
-CREATE TABLE role (
-    id INT NOT NULL AUTO_INCRIMENT,
-    title VARCHAR(30) NOT NULL,
-    salary DECIMAL NOT NULL,
-    department_id INT NOT NULL,
-    PRIMARY KEY (id)
-    FOREIGN KEY department_id
-    REFERENCES department(id)
-    ON DELETE SET NULL
-)
-
-CREATE TABLE employee (
-    id INT NOT NULL AUTO_INCRIMENT,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
-    role_id INT NOT NULL,
-    manager_id INT,
-    PRIMARY KEY (id)
-    FOREIGN KEY role_id
-    REFERENCES role(id)
-)
 
        

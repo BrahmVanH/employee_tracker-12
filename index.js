@@ -5,9 +5,10 @@ const mysql = require('mysql2');
 // create the connection
 const connection = mysql.createConnection(
   {
-    host:'localhost', 
+    host:'127.0.0.1', 
     user: 'root', 
-    database: 'employee_db'
+    database: 'employee_db',
+    password: 'Odinson!042920'
   }
 );
 // Use **this (promise().)** variation of query to expose promise.. whatever that means
@@ -20,13 +21,13 @@ const connection = mysql.createConnection(
 
   THIS IS A SAMPLE CODE FROM THE INTERWEBS */
 
-const db = mysql.createConnection(
+/*const db = mysql.createConnection(
     {
         user: 'root',
         password: 'Odinson!042920',
         database: 'employees_db'
     },
-)
+) */
 
 
 function promptUser() {
