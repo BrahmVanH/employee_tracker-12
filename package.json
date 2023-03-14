@@ -4,6 +4,6 @@
     "express": "^4.18.2",
     "inquirer": "^8.2.4",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.29.0"
   }
 }
